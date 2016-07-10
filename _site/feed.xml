@@ -5,8 +5,8 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 10 Jul 2016 16:20:55 +0800</pubDate>
-    <lastBuildDate>Sun, 10 Jul 2016 16:20:55 +0800</lastBuildDate>
+    <pubDate>Sun, 10 Jul 2016 16:33:56 +0800</pubDate>
+    <lastBuildDate>Sun, 10 Jul 2016 16:33:56 +0800</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -69,7 +69,7 @@ DWORD RecalcFunc(PVOID pvParam)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;在这个优化中编译器把bool变量的值载入到CPU的寄存器中，这个操作只进行一次。然后重复对CPU寄存器中的值进行测试。与每次都从变量所在的内存地址取得变量的值并进行测试相比，这样做当然能够得到更好的性能。但是如果编译器进行此类优化，那么线程会陷入无限循环。而加上volatile限定符后可以确保每次访问都是从内存中读取的。
-####指令重排
+#### 指令重排
 使用volatile限定符还不够，因为编译器可能会对指令进行重排，可能引起奇怪的问题。
 使用volatile限定符后指令被重排的情况可以被总结成下表：&lt;/p&gt;
 
